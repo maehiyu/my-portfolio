@@ -81,7 +81,6 @@ export default function Home() {
                         </ul>
                         {/* 連絡先メールアドレスを追加 */}
                         <div className="mt-6">
-                            <h3 className="md:text-lg font-semibold">Contact</h3>
                             <p className="text mt-2">
                                 <a
                                     href="mailto:m.hiyu3040@gmail.com"
