@@ -14,7 +14,6 @@ export default function WorksList() {
 
     if (el && containerRef.current) {
       const rect = el.getBoundingClientRect();
-      const containerRect = containerRef.current.getBoundingClientRect();
       const targetCenter = rect.left + rect.width / 2;
       const screenCenter = window.innerWidth / 2;
       setCenterOffset(screenCenter - targetCenter);

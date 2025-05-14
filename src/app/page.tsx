@@ -7,7 +7,6 @@ import { BsChevronRight } from "react-icons/bs";
 import { stacks } from "@/data/works";
 
 export default function Home() {
-    const [isOpen, setIsOpen] = useState(false);
     const [expanded, setExpanded] = useState(false);
     return (
         <main className="bg-background relative">

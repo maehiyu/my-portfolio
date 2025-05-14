@@ -50,7 +50,9 @@ export default function WorksIcon({
         className={`relative m-4 md:m-8 bg-white rounded-xl flex flex-col items-start justify-start cursor-pointer overflow-hidden shadow-lg ${isOpened ? "z-100" : "z-10"}`}
         onClick={(e) => {
             e.stopPropagation(); // これで親の onClick が発火しないようにする
-            isOpened ? null : onClick(work.id, ref.current);
+            if(!isOpened) {
+                onClick(work.id, ref.current);
+            }
         }}
         initial={{ width: 100, height: 100, x: 0 }}
         animate={
