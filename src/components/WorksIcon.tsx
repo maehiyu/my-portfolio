@@ -90,18 +90,20 @@ export default function WorksIcon({
             animate={isOpened ? "visible" : "hidden"}
             transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-            <Image
-            src={work.image}
-            alt={work.title}
-            fill
-            className="object-cover object-top"
-            />
+            <Link href={work.url} target="_blank">
+                <Image
+                    src={work.image}
+                    alt={work.title}
+                    fill
+                    className="object-cover object-top cursor-pointer"
+                />
+            </Link>
             <button
-            onClick={(e) => {
-                e.stopPropagation(); // 親の onClick を防ぐ
-                setOpenedId(null);
-            }}
-            className="absolute top-2 left-2 bg-white hover:bg-opacity-100 text-black rounded-full p-2 shadow-md"
+                onClick={(e) => {
+                    e.stopPropagation(); // 親の onClick を防ぐ
+                    setOpenedId(null);
+                }}
+                className="absolute top-2 left-2 bg-white hover:bg-opacity-100 text-black rounded-full p-2 shadow-md"
             >
                 <IoIosClose size={28} />
             </button>
