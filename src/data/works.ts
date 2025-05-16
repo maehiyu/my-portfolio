@@ -37,7 +37,7 @@ export type Work = {
         id: "2",
         title: "とねり poker shop",
         type: "EC Site",
-        image: "/images/ec.png",
+        image: "/toneri_cover.png",
         icon: "/toneri.png",
         url: "https://www.toneripokershop.jp",
         description: "ポーカーグッズを安心安全な価格で提供するECサイト。",
@@ -51,7 +51,7 @@ export type Work = {
               technologies: ["Medusa JS"]
             },
             {
-              category: "インフラ・デプロイ",
+              category: "その他",
               technologies: ["Vercel (フロントエンド)", "Railway (バックエンド)"]
             }
           ]
